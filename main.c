@@ -1,19 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int numeros[]={193, 586, 15, 77, 24, 762, 3, 1092, 85, 497};
+    int numeros[] = {193, 586, 15, 77, 24, 762, 3, 1092, 85, 497};
 
-    int numero = numeros[0];
-    for(int numero=0; numero<9;numero++){
-        if (numero%2==0){
-            printf("par\n");
-        }
-        else {
-            printf("impar\n");
+    for (int i = 0; i <= 9; i++) {
+        int numero = numeros[i];
+        if (numero % 2 == 0) {
+            printf("el numero es %d par\n", numero);
+        } else {
+            printf("el numero es %d impar\n", numero);
         }
     }
-
-
 
     return 0;
 }
