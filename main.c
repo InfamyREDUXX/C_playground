@@ -1,4 +1,4 @@
-    #include <stdio.h>
+#include <stdio.h>
 
 void validateIfPair(int numero) {
     if (numero % 2 == 0) {
@@ -21,15 +21,19 @@ int multi(int sumando1, int sumando2) {
 }
 
 int main() {
-    int numeros[] = {193, 586, 15, 77, 24, 762, 3, 1092, 85, 497};
 
-    int sumando1 = 452;
-    int sumando2 = 996;
-    int resultado;
+    char palabra[10];
+    printf("Dime una palabra:");
+    scanf("%s\n", palabra);
+    printf("%s", palabra);
 
-    printf("");
-    resultado = suma(1236, 972);
-    printf("suma %d", suma(1236, 972));
+
+    for (int i = 0; i <= 10; i++) {
+        printf("%c", palabra[i]);
+    }
+
+    //& -> obtener la direccion de memoria / referencia
+    //* -> obtener el valor en memoria
 
     return 0;
 
